@@ -6,8 +6,9 @@ def find_item_by_name_in_collection(name, collection)
   while index < collection.size do
     if collection[index] == name
       return name
+    else
+      index++
     end
-    index++
   end
   return nil
 end
